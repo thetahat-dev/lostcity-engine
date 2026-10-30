@@ -555,6 +555,11 @@ export default class ClientCheatHandler extends ClientGameMessageHandler<ClientC
 
                 // Displays current coordinate
                 player.messageGame(CoordGrid.formatString(player.level, player.x, player.z, ','));
+            } else if (cmd === 'players') {
+                // custom
+
+                // Displays how many players are online
+                player.messageGame(`Players online: ${World.getTotalPlayers()}`);
             } else if (cmd === 'tele') {
                 // authentic - https://youtu.be/60Y3y375VYA?t=980
                 if (args.length < 1) {
