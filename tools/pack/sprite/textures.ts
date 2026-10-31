@@ -23,7 +23,7 @@ export async function packClientTexture(cache: FileStream) {
         const index = Packet.alloc(3);
 
         const all = [];
-        for (let id = 0; id < 50; id++) {
+        for (let id = 0; id < TexturePack.max; id++) {
             all.push(await convertImage(index, `${Environment.build.srcDir}/textures`, TexturePack.getById(id)));
         }
 

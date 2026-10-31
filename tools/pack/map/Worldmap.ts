@@ -620,7 +620,11 @@ export async function packWorldmap() {
         [0x0150dc13, 0x00466b17], // debugname=jungle_dark_green overlay=false occlude=true rgb=0x396215
         [0x00a0c011, 0x0055431b], // debugname=mm_town_overlay overlay=true occlude=true rgb=0x544217
         [0x01203c0f, 0x00303224], // debugname=slayer_tower overlay=true occlude=true rgb=0x303525
-        [0x02605c07, 0x00030704] // debugname=morytania_dark_green overlay=false occlude=true rgb=0x111e1a
+        [0x02605c07, 0x00030704], // debugname=morytania_dark_green overlay=false occlude=true rgb=0x111e1a
+        // custom: first values are borrowed from similar floors
+        [0x00a0440d, 0x003b4216], // debugname=corrupt_edge overlay=false occlude=true rgb=0x3b4216
+        [0x00a0440d, 0x0036302a], // debugname=corrupt_mid overlay=false occlude=true rgb=0x36302a
+        [0x02605c07, 0x002b1b33] // debugname=corrupt_core overlay=false occlude=true rgb=0x2b1b33
     ];
 
     for (let i = 0; i < FloType.configs.length; i++) {
